@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Love Cakes — Bolos artesanais com delivery</title>
+  <meta name="description" content="Love Cake: bolos artesanais, tortas e sobremesas com delivery rápido. Encomende online ou por telefone.">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5717/5717439.png" type="image/x=icon">
+  <style>
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container flex">
+      <div class="brand">
+        <div class="logo">LC</div>
+        <div>
+          <div style="font-weight:800">Love Cakes</div>
+          <a href="carrinho.html" class="btn-carrinho">🛒 Carrinho</a>
+          <div class="small">Bolos artesanais • Delivery rápido</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#encomendar">Encomende</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>O sabor que conquista corações</h1>
+        <p>Love Cakes prepara bolos e sobremesas artesanais, com ingredientes selecionados e opção de delivery em sua casa em poucas horas. Faça sua encomenda!</p>
+        <div class="cta">
+          <a class="btn" href="#encomendar">Faça sua encomenda</a>
+          <a class="btn ghost" href="tel:+551199999999">Ligar: (11) 99999-9999</a>
+        </div>
+
+        <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
+          <div class="card" style="min-width:180px">Entrega em até <strong>3 horas</strong> (área central)</div>
+          <div class="card" style="min-width:180px">Retirada na loja — sem taxa</div>
+        </div>
+
+        <!-- Bolo 1 -->
+        <div id="menu" style="margin-top:26px">
+          <h3>Nosso Menu</h3>
+          <div class="menu-grid">
+            <div class="card cake">
+              <img src="https://www.estadao.com.br/resizer/v2/NWRHISDZQ5O2TAHNCID5EF3WW4.jpg?quality=80&auth=2be7c3b7b5d9e4ba7beced851ca46395fded2f5ef4e77e1b7f9dcb05bf26acde&width=720&height=410&focal=0,0" alt="Bolo Red Velvet">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                  <div style="font-weight:700">Red Velvet</div>
+                  <div class="small">Bolo clássico com cream cheese</div>
+                  <button onclick="addToCart('Red Velvet', 85.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="price">R$ 85</div>
+              </div>
+            </div>
+
+            <!-- Bolo 2 -->
+            <div class="card cake">
+              <img src="https://youmustgo.com.br/wp-content/uploads/2023/01/creamy-patisserie-bolo-de-chocolate-belga-e-brigadeiro-credito-alex-woloch-2-scaled.jpg.webp" alt="Bolo de Chocolate">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                  <div style="font-weight:700">Chocolate Belga</div>
+                  <div class="small">Recheio cremoso de ganache</div>
+                  <button onclick="addToCart('Chocolate Belga', 90.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="price">R$ 90</div>
+              </div>
+            </div>
+
+            <!-- Bolo 3 -->
+            <div class="card cake">
+              <img src="https://static.itdg.com.br/images/640-440/f2a06c2a3f1f470b00387776c30addb5/bolo-de-cenoura-com-cobertura-de-chocolate.jpg" alt="Bolo de Cenoura">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                  <div style="font-weight:700">Cenoura com Cobertura</div>
+                  <div class="small">Bolo macio com cobertura especial</div>
+                  <button onclick="addToCart('Bolo de Cenoura', 55.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="price">R$ 55</div>
+              </div>
+            </div>
+
+            <!-- Bolo 4 -->
+            <div class="card cake">
+              <img src="https://s04.video.glbimg.com/x720/13215319.jpg" alt="Cheesecake">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                  <div style="font-weight:700">Cheesecake</div>
+                  <div class="small">Base crocante e creme cremoso</div>
+                  <button onclick="addToCart('Cheesecake', 75.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="price">R$ 75</div>
+              </div>
+            </div>
+
+            <!-- Bolo 5 -->
+            <div class="card cake">
+              <img src="https://i0.wp.com/www.flamboesa.com.br/wp-content/uploads/2017/12/bolo-recheado-com-brigadeiro-e-geleia_967.jpg" alt="Frutas Vermelhas">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                  <div style="font-weight:700">Frutas Vermelhas Deluxe</div>
+                  <div class="small">Creme belga e frutas frescas</div>
+                  <button onclick="addToCart('Frutas Vermelhas Deluxe', 88.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="price">R$ 88</div>
+              </div>
+            </div>
+
+            <!-- Bolo 6 -->
+            <div class="card cake">
+              <img src="https://swiftbr.vteximg.com.br/arquivos/bolo-canela-churros-doce-leite.jpg" alt="Doce de Leite Mineiro">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                  <div style="font-weight:700">Doce de Leite Mineiro</div>
+                  <div class="small">Recheio cremoso e flor de sal</div>
+                  <button onclick="addToCart('Doce de Leite Mineiro', 82.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="price">R$ 82</div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+      
+
+        <div style="height:18px"></div>
+
+        <div class="card">
+          <h4 style="margin:0 0 8px 0">Área de entrega</h4>
+          <p class="small">Atendemos bairros centrais e região metropolitana. Taxa de entrega calculada por CEP. Pedido mínimo para delivery: <strong>R$ 40</strong>.</p>
+        </div>
+
+      </aside>
+    </section>
+
+    <section id="sobre" style="margin:28px 0">
+      <div class="grid-3 container" style="max-width:1100px;">
+        <div class="card">
+          <h4>Sobre nós</h4>
+          <p class="small">Love Cakes nasceu do amor por confeitaria. Preparamos bolos artesanais, sem conservantes, priorizando sabor e tradição.</p>
+        </div>
+        <div class="card">
+          <h4>Como encomendar</h4>
+          <ol class="small">
+            <li>Escolha o bolo.</li>
+            <li>Adicione ao carrinho.</li>
+            <li>Informe seu nome e telefone, e finalize o pedido.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h4>Horário</h4>
+          <p class="small">Seg−Sex: 9h − 19h<br>Sáb: 9h − 15h<br>Dom: fechado</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h3>Contato</h3>
+      <div class="grid-3 container" style="max-width:1100px;">
+        <div class="card">
+          <strong>Endereço</strong>
+          <div class="small">Praça da Sé, 123 — Centro</div>
+          <div style="height:10px"></div>
+          <strong>Telefone</strong>
+          <div class="small">(11) 99999-9999 (WhatsApp)</div>
+          <div style="height:10px"></div>
+          <strong>E-mail</strong>
+          <div class="small">contato@lovecakes.com.br</div>
+        </div>
+
+        <div class="card">
+          <div class="small"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5047169917693!2d-46.636775824670096!3d-23.55030987880742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1
+            s0x94ce59abaaae4233%3A0xd9186faf714bc5b1!2sPra%C3%A7a%20da%20S%C3%A9%20-%20Se%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001001-000!5e0!3m2!1spt-BR!2sbr!4v1765142199625!5m2!1spt-BR!2sbr" width="600" 
+            height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+
+        <div class="card">
+          <strong>Fale conosco</strong>
+          <form onsubmit="event.preventDefault();alert('Mensagem enviada — exemplo.')">
+            <label for="email">Seu e-mail</label>
+            <input id="email" type="email" required>
+            <label for="message">Mensagem</label>
+            <textarea id="message" rows="4" required></textarea>
+            <div style="margin-top:8px"><button class="btn" type="submit">Enviar</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+      <div class="small">© Love Cakes — Todos os direitos reservados</div>
+      <div class="small">Siga: 
+        <a href="#" style="margin-left:8px;text-decoration:none">Instagram</a>
+        <a href="#" style="margin-left:8px;text-decoration:none">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>

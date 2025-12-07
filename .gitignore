@@ -1,0 +1,26 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+
+# Logs
+*.log
+
+# Ambiente
+.env
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# XAMPP ou MySQL configs (não versionar)
+xampp/
+mysql/
+
+# Cache
+.cache/

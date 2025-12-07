@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Love Cakes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="carrinho-body">
+
+    <header class="carrinho-header">
+        <h1>🛍️ Seu Carrinho - Love Cakes</h1>
+        <a href="index.html" class="btn-voltar">⟵ Voltar à Loja</a>
+    </header>
+
+    <main class="carrinho-container">
+
+        <h2>Itens no Carrinho</h2>
+
+        <ul id="lista-carrinho"></ul>
+
+        <p class="total-box">
+            Total: R$ <span id="total-valor">0,00</span>
+        </p>
+
+        <div class="dados-cliente">
+            <label>Seu Nome:</label>
+            <input id="nome" type="text" placeholder="Seu nome">
+
+            <label>Seu Telefone:</label>
+            <input id="telefone" type="text" placeholder="(11) 99999-9999">
+        </div>
+
+        <button class="btn-finalizar" onclick="finalizarPedido()">
+            Finalizar Pedido 💗
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
