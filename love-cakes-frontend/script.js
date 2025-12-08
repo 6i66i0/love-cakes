@@ -46,6 +46,12 @@ function removerItem(i) {
 
 window.onload = atualizarCarrinho;
 
+// Validação do campo telefone — permite só números e limita a 11 dígitos (DDD + número)
+function validarTelefone(input) {
+    input.value = input.value.replace(/\D/g, "").slice(0, 11);
+}
+
+
 // =====================================================
 // ENVIAR PEDIDO PARA O BACKEND (Node + MySQL)
 // =====================================================
