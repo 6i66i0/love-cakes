@@ -10,6 +10,38 @@
   <style>
   </style>
 </head>
+
+<div id="popup-sucesso" class="popup" style="display:none;">
+  <div class="popup-content">
+    <h3>🎉 Pedido realizado com sucesso!</h3>
+    <p>Seu pedido foi registrado. Em breve entraremos em contato!</p>
+
+    <!-- 🔥 BOTÃO PARA FECHAR -->
+    <button onclick="fecharPopup()" class="popup-ok">OK</button>
+  </div>
+</div>
+
+
+<script>
+    // Verifica se veio da finalização (?pedido=sucesso)
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("pedido") === "sucesso") {
+        const popup = document.getElementById("popup-sucesso");
+        popup.style.display = "flex";
+
+        // Remove o parâmetro da URL depois
+        setTimeout(() => {
+            history.replaceState({}, document.title, "index.html");
+        }, 1500);
+    }
+
+    function fecharPopup() {
+    document.getElementById("popup-sucesso").style.display = "none";
+}
+
+</script>
+
+
 <body>
   <header>
     <div class="container flex">

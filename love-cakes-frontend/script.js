@@ -71,28 +71,29 @@ function finalizarPedido() {
     }
 
     const itens = carrinho.map(item => ({
-        nome: item.nome,
-        preco: item.preco,
-        quantidade: item.quantidade || 1
-    }));
+    nome: item.nome,
+    preco: item.preco,
+    quantidade: item.quantidade || 1
+}));
 
-    fetch("http://localhost:3000/pedido", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ nome, telefone, itens })
-    })
-    .then(res => res.json())
-    .then(data => {
-        alert("Pedido registrado com sucesso! Número: " + data.pedidoId);
+fetch("http://localhost:3000/pedido", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ nome, telefone, itens })
+})
+.then(res => res.json())
+.then(data => {
+    // limpar carrinho
+    carrinho = [];
+    localStorage.removeItem("carrinho");
+    atualizarCarrinho();
 
-        // limpar carrinho após finalizar
-        carrinho = [];
-        localStorage.removeItem("carrinho");
+    // redirecionar com indicador de sucesso
+    window.location.href = "index.html?pedido=sucesso";
+})
+.catch(err => {
+    console.log(err);
+    alert("Erro ao enviar pedido.");
+});
 
-        atualizarCarrinho();
-    })
-    .catch(err => {
-        console.log(err);
-        alert("Erro ao enviar pedido.");
-    });
 }
