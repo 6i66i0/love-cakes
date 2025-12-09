@@ -8,6 +8,17 @@ Este projeto consiste no desenvolvimento completo de um site de
 loja de bolos com carrinho, integração com banco de dados MySQL e uma
 API Node.js para registrar pedidos no banco.
 
+Imagens:
+<img width="1914" height="941" alt="Captura de tela 2025-12-08 212319" src="https://github.com/user-attachments/assets/6a0018b8-7fee-44fa-9277-939d96dfb2d4" />
+<img width="1912" height="941" alt="Captura de tela 2025-12-08 212331" src="https://github.com/user-attachments/assets/36ed1235-208f-4143-bb93-26a2e911eab2" />
+<img width="1915" height="938" alt="Captura de tela 2025-12-08 212341" src="https://github.com/user-attachments/assets/6512d929-1c1e-4ef3-8049-bbdd5bf62431" />
+<img width="1913" height="940" alt="Captura de tela 2025-12-08 212350" src="https://github.com/user-attachments/assets/bc845a81-ae7d-46f4-91f5-b8865907ae92" />
+<img width="1912" height="930" alt="Captura de tela 2025-12-08 212452" src="https://github.com/user-attachments/assets/e9ef30b9-e2db-4357-ae1b-c3c5dc8d90b0" />
+<img width="1912" height="935" alt="Captura de tela 2025-12-08 212502" src="https://github.com/user-attachments/assets/f92c5233-2a97-43a6-94a5-47324bf30869" />
+<img width="1906" height="935" alt="Captura de tela 2025-12-08 212606" src="https://github.com/user-attachments/assets/f1dbd158-b73c-43d3-b8df-8922df590c6e" />
+
+
+
 
 
 🔧 Ferramentas:
@@ -76,7 +87,7 @@ Testar o fluxo completo: adicionar bolos, abrir o carrinho e finalizar o pedido.
 Para testar a gravação no banco de dados, basta acessar o phpMyAdmin e visualizar as tabelas.
 
   
-Vídeo:
+Vídeo: https://youtu.be/WwVrsSzaxgU
 
 
 Projeto "Love Cakes" ❤️ Desenvolvido por Giovanni
