@@ -85,11 +85,12 @@ Abrir o arquivo index.html do frontend no navegador.
 Testar o fluxo completo: adicionar bolos, abrir o carrinho e finalizar o pedido.
 
 Para testar a gravação no banco de dados, basta acessar o phpMyAdmin e visualizar as tabelas.
-
+</pre>
   
-Vídeo: https://youtu.be/WwVrsSzaxgU
+Vídeo: [Clique aqui para assistir](https://youtu.be/blablalba)
 
 
+<pre>
 Projeto "Love Cakes" ❤️ Desenvolvido por Giovanni
 Projeto acadêmico, uso livre para estudos.
 
