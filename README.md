@@ -60,7 +60,7 @@ Tratamento de erros com retornos JSON
 
 Conexão com MySQL usando mysql2
 
-
+ 
 
 🗃️ Banco de Dados (MySQL)
 Tabelas:
